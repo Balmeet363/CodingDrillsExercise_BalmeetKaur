@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script src="codingdrillsJ2.js"></script>
+	</head>
+	<body>
+		<h1>Vote Count</h1>
+		<!-- generating form to count votes-->
+		<form name="votecount_form">
+			<div>
+			<!-- first textbox to enter total number of votes -->
+				<label>Enter total number of votes:</label>
+				<input type="text" name="total_votes">
+				<!-- span tag taken to display error message -->
+				<span id="votesErr"></span>
+			</div>
+			<div>
+			<!-- second textbox to enter sequence of characters whom user want to vote -->
+				<label>Enter sequence of characters:</label>
+				<input type="text" name="characters_sequence">
+				<!-- span tag taken to display error message-->
+				<span id="charactersErr"></span>
+			</div>
+			<div>
+				<input type="submit" value="calculate result" name="submit_btn">
+			</div>
+		</form>
+		<div id="result_message">
+		</div>
+	</body>
+</html>
